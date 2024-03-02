@@ -20,7 +20,7 @@
   "dependencies": {
     "bloom-filter": "^0.2.0",
     "node-buffers": "github:underdarkskies/node-buffers",
-    "aidpcore-lib": "github:underdarkskies/aidpcore-lib",
+    "aidpcore-lib": "github:AidpProject/aidpcore-lib",
     "socks5-client": "^1.2.8"
   },
   "devDependencies": {
