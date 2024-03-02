@@ -5,7 +5,7 @@ var expect = require('chai').expect;
 var P2P = require('../../../');
 var Messages = P2P.Messages;
 var sinon = require('sinon');
-var ravencore = require('ravencore-lib');
+var aidpcore = require('aidpcore-lib');
 
 describe('Command Messages', function() {
 
@@ -46,18 +46,18 @@ describe('Command Messages', function() {
   describe('Transaction', function() {
 
     it('should accept a transaction instance as an argument', function() {
-      var tx = new ravencore.Transaction();
+      var tx = new aidpcore.Transaction();
       var message = messages.Transaction(tx);
-      message.transaction.should.be.instanceof(ravencore.Transaction);
+      message.transaction.should.be.instanceof(aidpcore.Transaction);
     });
 
     it('should create a transaction instance', function() {
       var message = messages.Transaction();
-      message.transaction.should.be.instanceof(ravencore.Transaction);
+      message.transaction.should.be.instanceof(aidpcore.Transaction);
     });
 
     it('version should remain the same', function() {
-      var tx = new ravencore.Transaction();
+      var tx = new aidpcore.Transaction();
       var version = Number(tx.version);
       var message = messages.Transaction(tx);
       message.transaction.version.should.equal(version);
@@ -68,12 +68,12 @@ describe('Command Messages', function() {
   describe('Block', function() {
 
     it('should accept a block instance as an argument', function() {
-      var block = new ravencore.Block({
+      var block = new aidpcore.Block({
         header: {},
         transactions: []
       });
       var message = messages.Block(block);
-      message.block.should.be.instanceof(ravencore.Block);
+      message.block.should.be.instanceof(aidpcore.Block);
     });
 
   });

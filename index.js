@@ -1,5 +1,5 @@
 /*eslint strict:0*/
-var ravencore = require('ravencore-lib');
-ravencore.P2P = require('./lib');
+var aidpcore = require('aidpcore-lib');
+aidpcore.P2P = require('./lib');
 
-module.exports = ravencore.P2P;
+module.exports = aidpcore.P2P;
