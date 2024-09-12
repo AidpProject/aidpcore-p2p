@@ -3,7 +3,7 @@ Aidpcore P2P
 
 `aidpcore-p2p` adds [Aidpcoin protocol](https://en.bitcoin.it/wiki/Protocol_documentation) support for Aidpcore.
 
-See [the main aidpcore repo](https://github.com/AidpProject/aidpcore) for more information.
+See [the main aidpcore repo](https://github.com/AidpProject/aidpcore-p2p) for more information.
 
 ## Getting Started
 
